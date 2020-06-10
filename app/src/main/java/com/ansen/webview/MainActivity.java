@@ -1,27 +1,21 @@
 package com.ansen.webview;
 
 import android.app.AlertDialog;
-import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
-import android.webkit.DownloadListener;
 import android.webkit.JavascriptInterface;
 import android.webkit.JsResult;
 import android.webkit.WebChromeClient;
-import android.webkit.WebResourceError;
-import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import java.lang.annotation.Annotation;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private WebView webView;
@@ -32,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        progressBar= (ProgressBar)findViewById(R.id.progressbar);//进度条
+        progressBar= findViewById(R.id.progressbar);//进度条
 
-        webView = (WebView) findViewById(R.id.webview);
+        webView = findViewById(R.id.webview);
 //        webView.loadUrl("file:///android_asset/test.html");//加载asset文件夹下html
         webView.loadUrl("http://139.196.35.30:8080/OkHttpTest/apppackage/test.html");//加载url
 

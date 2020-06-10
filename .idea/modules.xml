@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Webview.iml" filepath="$PROJECT_DIR$/Webview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/Webview-app.iml" filepath="$PROJECT_DIR$/app/Webview-app.iml" group="Webview/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/github-Webview.iml" filepath="$PROJECT_DIR$/github-Webview.iml" group="Webview" />
     </modules>
   </component>
 </project>
